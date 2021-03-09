@@ -12,4 +12,4 @@ TODO:
 5. touchbar: replace siry with input-source
 6. git:
    - git config --global user.name "Artsiom Varabei"
-   - 
+7. shall I use dotbot as PyPI? 
