@@ -5,6 +5,7 @@ This is my first dotfiles repo!
 First, make sure default shell is zsh: `chsh -s /bin/zsh`
 
 TODO: 
+1. Homebrew install
 1. mission control: don't rearrange workspaces 
 2. finder.view: show path bar 
 3. hide or unmount extra volumes 
