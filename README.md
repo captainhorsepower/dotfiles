@@ -55,15 +55,30 @@ TODO:
 1. zsh setup
     - completions
     - funcitons
-    - aliases and colorization
     - zsh plugins
+    - need a beutiful theme with pictures and emojis
+        - oh my zsh vs hyper.js
 1. macOs prefs:
-   - First, make sure default shell is zsh: `chsh -s /bin/zsh`
-   - mission control: don't rearrange workspaces 
-   - finder.view: show path bar 
-   - hide or unmount extra volumes 
-   - three finger drag: accessability.pointer control.trackpad options; disable    tap-to-click. 
-   - touchbar: replace siry with input-source
+    - First, make sure default shell is zsh: `chsh -s /bin/zsh`
+    - mission control: don't rearrange workspaces 
+    - finder.view: show path bar 
+    - hide or unmount extra volumes 
+    - three finger drag: accessability.pointer control.trackpad options; disable tap-to-click. 
+    - touchbar: replace siry with input-source
+    - cutom safari keybindings
+
+1. vscode setup
+    - filter out extensions
+    - automate install process
+    - integrate with vim!
+    - learn and use vim, ex
+
+1. mackup
+
+1. filter out brew packages (put together bundle and leaves)
+1. window manager for macOS ?
+1. play with gitkraken, alfred. Backup their prefs..
+1. backup intellij IDEA
 
 1. what is git difftool and how to use it?
    ```gitconfig
@@ -75,5 +90,5 @@ TODO:
 
 1. fix repo urls in description 
 1. check out [git filter-repo](https://github.com/newren/git-filter-repo)
-1. lean and use vim, ex
+1. checkout bit (instead of git)
 
