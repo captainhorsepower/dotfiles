@@ -1,3 +1,6 @@
+# Set Variables
+export DOTFILES="$HOME/.dotfiles"
+
 # Aliases
 
 alias ls='ls -lAFh'
@@ -9,12 +12,30 @@ PROMPT='
 
 RPROMPT='%*'
 
-# Functions
+# Write Handy Functions
 
 function mkcd() {
   mkdir -p "$@" && cd "$_";
-  # $@ -- all args
-  # $_ -- last arg
+}
+
+# Ensure Brewfile is only created in ~/.dotfiles directory
+function bbd() {
+
+  local startingDirectory=$PWD;
+
+  if [[ $startingDirectory != $DOTFILES ]]; then
+    echo "Changing to $DOTFILES";
+    cd $DOTFILES;
+  fi
+
+  echo "Dumping Brewfile";
+  brew bundle dump --force --describe;
+
+  if [[ $startingDirectory != $DOTFILES ]]; then
+    echo "Returning to $startingDirectory";
+    cd $startingDirectory;
+  fi
+
 }
 
 # Completions
