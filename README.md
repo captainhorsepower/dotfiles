@@ -58,6 +58,7 @@ TODO:
     - zsh plugins
     - need a beutiful theme with pictures and emojis
         - oh my zsh vs hyper.js
+
 1. macOs prefs:
     - First, make sure default shell is zsh: `chsh -s /bin/zsh`
     - mission control: don't rearrange workspaces 
@@ -73,12 +74,18 @@ TODO:
     - integrate with vim!
     - learn and use vim, ex
 
+1. ffmpeg and imagemagick. 
+1. tesseract
+
+1. fish vs zsh
+
+1. Look through brew file
+
+1. play with gitkraken, alfred. Backup their prefs..
 1. mackup
 
-1. filter out brew packages (put together bundle and leaves)
-1. window manager for macOS ?
-1. play with gitkraken, alfred. Backup their prefs..
 1. backup intellij IDEA
+1. window manager for macOS ?
 
 1. what is git difftool and how to use it?
    ```gitconfig
