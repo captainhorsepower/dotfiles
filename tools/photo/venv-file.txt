@@ -1,0 +1,1 @@
+/Users/artemvrby/projects/course-work/sources/opencvenv/bin/activate
