@@ -131,4 +131,5 @@ TODO:
     - window manager for macOS ?
         - snap windows within one desktop
         - handle windows when on connect/disconnect monitor
+    - what is `osascript`
 
