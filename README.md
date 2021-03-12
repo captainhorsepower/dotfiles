@@ -75,4 +75,5 @@ TODO:
 
 1. fix repo urls in description 
 1. check out [git filter-repo](https://github.com/newren/git-filter-repo)
+1. lean and use vim, ex
 
