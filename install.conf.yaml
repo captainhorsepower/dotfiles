@@ -5,7 +5,7 @@
 - clean: ['~']
 
 - link:
-    # ~/.gitconfig:
+    ~/.gitconfig:
     ~/.zshenv: 
     ~/.zshrc: 
 
