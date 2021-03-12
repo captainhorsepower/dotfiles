@@ -1,6 +1,6 @@
 # Dotfiles
 
-This is my first dotfiles repo!
+This is my first dotfiles repo! Inspired and curated by [dotfiles.eieio.xyz](http://dotfiles.eieio.xyz).
 
 First, make sure default shell is zsh: `chsh -s /bin/zsh`
 
