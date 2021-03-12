@@ -20,3 +20,7 @@
     - command: ./setup_homebrew.zsh
       stdout: true
       stderr: true
+    # Configure defaults (preferences)
+    - command: ./setup_macos_defaults.zsh
+      stdout: true
+      stderr: true
