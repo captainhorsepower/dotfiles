@@ -2,6 +2,13 @@
 
 This is my first dotfiles repo! Inspired and curated by [dotfiles.eieio.xyz](http://dotfiles.eieio.xyz).
 
+## How it all works
+
+Most of bootstrapping is done by [Dotbot](https://github.com/anishathalye/dotbot).
+It creates symlinks, folders, and runs scripts that I want.
+
+@see [install.conf.yaml](./install.conf.yaml) to see what it's actually doing
+
 ## Restore Instructions
 
 1. `xcode-select --install` (Command Line Tools are required for Git and Homebrew)
