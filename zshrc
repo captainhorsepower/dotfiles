@@ -10,6 +10,12 @@ alias lst='ls --sort age'
 alias exa='exa -laF --git --git-ignore'
 alias exat='exa --sort age'
 
+# Colorful manpage
+alias man='batman'
+
+# Colorful cat
+alias cat='bat'
+
 # Customize Prompt(s)
 
 PROMPT='
