@@ -1,9 +1,14 @@
 # Set Variables
 export DOTFILES="$HOME/.dotfiles"
 
-# Aliases
+# My awesome aliases
 
-alias ls='ls -lAFh'
+# Colorful ls
+alias ls='command exa -lF --git'
+alias lst='ls --sort age'
+
+alias exa='exa -laF --git --git-ignore'
+alias exat='exa --sort age'
 
 # Customize Prompt(s)
 
