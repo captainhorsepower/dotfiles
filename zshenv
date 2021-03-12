@@ -1,3 +1,6 @@
+# TODO: should I also use --no-binaries?
+export HOMEBREW_CASK_OPTS="--no-quarantine"
+
 function exists() {
   # `command -v` is similar to `which`
   # https://stackoverflow.com/a/677212/1341838
