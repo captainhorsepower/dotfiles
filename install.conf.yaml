@@ -8,6 +8,9 @@
     ~/.gitconfig:
     ~/.zshenv: 
     ~/.zshrc: 
+    ~/.config/bat:
+      create: true
+      path: config/bat
 
 - create:
     - ~/Projects
