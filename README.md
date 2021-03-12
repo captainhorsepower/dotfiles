@@ -52,7 +52,11 @@ It creates symlinks, folders, and runs scripts that I want.
 
 
 TODO:
-1. fix repo urls in description 
+1. zsh setup
+    - completions
+    - funcitons
+    - aliases and colorization
+    - zsh plugins
 1. macOs prefs:
    - First, make sure default shell is zsh: `chsh -s /bin/zsh`
    - mission control: don't rearrange workspaces 
@@ -60,6 +64,7 @@ TODO:
    - hide or unmount extra volumes 
    - three finger drag: accessability.pointer control.trackpad options; disable    tap-to-click. 
    - touchbar: replace siry with input-source
+
 1. what is git difftool and how to use it?
    ```gitconfig
    [diff]
@@ -67,4 +72,6 @@ TODO:
    [difftool "vscode"]
        cmd = code --wait --diff $LOCAL $REMOTE
    ```
+
+1. fix repo urls in description 
 

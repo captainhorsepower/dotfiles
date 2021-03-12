@@ -19,7 +19,7 @@ function mkcd() {
 
 # Completions
 
-# Brew
+# Brew TODO: move it to somewhare else
 if type brew &>/dev/null; then
   FPATH=$(brew --prefix)/share/zsh/site-functions:$FPATH
 
