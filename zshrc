@@ -73,6 +73,13 @@ autoload -Uz _zinit
 (( ${+_comps} )) && _comps[zinit]=_zinit
 ### End of Zinit's installer chunk
 
+# Finally! enable so good fucking completions 
+# https://stackoverflow.com/a/22627273/9253292
+# TODO: figure out what a hell is happening
+zstyle ':completion:*' completer _complete
+zstyle ':completion:*' matcher-list '' 'm:{[:lower:][:upper:]}={[:upper:][:lower:]}' '+l:|=* r:|=*'
+autoload -Uz compinit; compinit
+
 # TODO what do ice and compile mean?
 # TODO add space between `branch` and `*` 
 zinit ice compile'(pure|async).zsh' pick'async.zsh' src'pure.zsh'
@@ -84,6 +91,11 @@ zinit light sindresorhus/pure
 # - opt + -> does what i want, but not perfect
 zinit ice silent wait:1 atload:_zsh_autosuggest_start
 zinit light zsh-users/zsh-autosuggestions
+
+# may be load in turbo? 
+# FIXME wtf how to uninstall it?
+zinit light zsh-users/zsh-completions
+
 
 # TODO configure colors
 zinit light zdharma/fast-syntax-highlighting
