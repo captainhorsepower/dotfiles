@@ -2,8 +2,13 @@
 // which will not automatically be merged into this file.
 // See https://hyper.is#cfg for all currently supported options.
 
+// once (and if) hyper becomes slow and disrupting, will try Kitty. Looks like fast and easy to backup.
+// it's also quite fat.
+
 // TODO: install fonts.
 // FIXME: blank line in every new window https://github.com/vercel/hyper/issues/4504
+// TODO find a way to reinstall all plugins: 
+// like `for i in $(echo ${(F)$(hyper ls)[@]}); do hyper u $i; hyper i $i; done`
 
 module.exports = {
   config: {
@@ -14,7 +19,7 @@ module.exports = {
 
     // font family with optional fallbacks
     fontFamily: 'Menlo, "DejaVu Sans Mono", Consolas, "Lucida Console", monospace',
-    
+
     fontWeight: 'normal',
     fontWeightBold: 'bold',
 
@@ -72,12 +77,31 @@ module.exports = {
     defaultSSHApp: true,
 
     webGLRenderer: true,
+
+    hypercwd: {
+      initialWorkingDirectory: '~/.dotfiles'
+    },
   },
 
-  plugins: ["hyperborder", "hyper-loved", "hyper-snazzy"],
+  // hyper-cat is awesome )))
+  // one day will try https://www.npmjs.com/package/hyper-postprocessing
+  // TODO:
+  // - https://github.com/chabou/hyper-pane
+  // - scrollbar
+  plugins: [
+    "hypercwd",
+    "hyper-quit",
+    "gitrocket",
+    "space-pull",
+    "hyperborder",
+    "hyper-loved",
+    "hyper-snazzy"
+  ],
+
 
   keymaps: {
     // Example
     // 'window:devtools': 'cmd+alt+o',
   },
+
 };
