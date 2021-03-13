@@ -5,3 +5,5 @@
 	autocrlf = input
 	editor = code --wait
 
+[pull]
+	ff = only
