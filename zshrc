@@ -78,4 +78,4 @@ autoload -Uz _zinit
 zinit ice compile'(pure|async).zsh' pick'async.zsh' src'pure.zsh'
 zinit light sindresorhus/pure
 
-zplugin load zsh-users/zsh-syntax-highlighting
+zinit light zdharma/fast-syntax-highlighting
