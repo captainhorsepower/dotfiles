@@ -78,8 +78,6 @@ cask "clockify"
 cask "daisydisk"
 # Voice and text chat software
 cask "discord"
-# Git client focusing on productivity
-cask "gitkraken"
 # Terminal built on web technologies
 cask "hyper"
 # JetBrains tools manager
@@ -102,7 +100,6 @@ cask "visual-studio-code"
 # Multimedia player
 cask "vlc"
 mas "Disk Speed Test", id: 425264550
-mas "Microsoft Remote Desktop", id: 1295203466
 mas "Numbers", id: 409203825
 mas "Pages", id: 409201541
 mas "Spark", id: 1176895641
