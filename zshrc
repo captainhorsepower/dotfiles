@@ -82,6 +82,7 @@ autoload -Uz compinit; compinit
 
 # TODO what do ice and compile mean?
 # TODO add space between `branch` and `*` 
+# TODO still not good way to customize theme (and id doesn't show up in prompt -l...)
 zinit ice compile'(pure|async).zsh' pick'async.zsh' src'pure.zsh'
 zinit light sindresorhus/pure
 
