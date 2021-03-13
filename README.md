@@ -53,12 +53,38 @@ It creates symlinks, folders, and runs scripts that I want.
 
 TODO:
 
+1. oh my zsh vs hyper.js https://medium.com/@ssharizal/hyper-js-oh-my-zsh-as-ubuntu-on-windows-wsl-terminal-8bf577cdbd97
+    - git 
+    - theme
+    - k8s
+    - https://jdhao.github.io/2019/10/08/zsh_plugin_managers_compare/
+    - https://project-awesome.org/unixorn/awesome-zsh-plugins#Tutorials
+
+1. mackup
+
+1. iTerm2
+
 1. zsh setup
     - completions
     - funcitons
     - zsh plugins
     - need a beutiful theme with pictures and emojis
-        - oh my zsh vs hyper.js https://medium.com/@ssharizal/hyper-js-oh-my-zsh-as-ubuntu-on-windows-wsl-terminal-8bf577cdbd97
+    - zsh -g and -s aliases
+    - zsh spelling correction
+
+    - What I've found: 
+        - cool features can be added as plugins
+        - plugin managers:
+            - oh-my-zsh is popular but relatively slow
+            - antibody is written in go, is easy faster
+            - zinit (previsouly zplugin) is the fastest, 
+                - adds turbo mode (asyn plugin loading)
+                - seems like the most complicated (steep learning curve)
+        - plugins that I want:
+            - [spaceship prompt](https://github.com/denysdovhan/spaceship-prompt) minimalist prettification thing. 
+            Promises to have everithing I'll want without unncesessary complications, just like a real spaceship.
+            - [thefuck](https://github.com/nvbn/thefuck) corrects typos in previous command
+
 
 1. macOs prefs:
     - First, make sure default shell is zsh: `chsh -s /bin/zsh`
@@ -66,12 +92,16 @@ TODO:
     - three finger drag: accessability.pointer control.trackpad options; disable tap-to-click. 
     - touchbar: replace siry with input-source
     - cutom safari keybindings
-    - https://macos-defaults.com/#🙋-what-s-a-defaults-command
-    - https://github.com/benitolopez/dotfiles-macos/blob/master/.macos
-    - https://www.intego.com/mac-security-blog/unlock-the-macos-docks-hidden-secrets-in-terminal/
-    - https://about.gitlab.com/blog/2020/04/17/
-    - dotfiles-document-and-automate-your-macbook-setup/
-    - todo
+    - newer: 
+        - https://github.com/webpro/awesome-dotfiles
+        - https://github.com/driesvints/dotfiles
+    - older:
+        - https://macos-defaults.com/#🙋-what-s-a-defaults-command
+        - https://github.com/benitolopez/dotfiles-macos/blob/master/.macos
+        - https://www.intego.com/mac-security-blog/ unlock-the-macos-docks-hidden-secrets-in-terminal/
+        - https://about.gitlab.com/blog/2020/04/17/ dotfiles-document-and-automate-your-macbook-setup/
+        - https://macos-defaults.com/dock/mineffect.html#set-to-suck
+        - todo
         - defaults read com.crystalidea.macsfancontrol
 
 1. vscode setup
@@ -80,6 +110,8 @@ TODO:
     - integrate with vim!
     - learn and use vim, ex
     - https://github.com/VSCodeVim/Vim/network/dependents?package_id=UGFja2FnZS0xMzYyNjc2Mg%3D%3D
+    - tmux https://thoughtbot.com/blog/a-tmux-crash-course
+    - https://mikebuss.com/2014/02/02/a-beautiful-productive-terminal-experience/
 
 1. Look through brew file
 
@@ -93,7 +125,6 @@ TODO:
 
 1. play with gitkraken, alfred. Backup their prefs.. 
     - maybe gitlens is good enough? https://github.com/eamodio/vscode-gitlens/issues/472
-1. mackup
 
 1. ffmpeg and imagemagick. 
 1. tesseract
@@ -143,4 +174,5 @@ TODO:
             - Karabiner -- allow key remap and other funky keyboard tricks
     - create tachyon cask, or use tunnelbear instead
     - i like this for ios development https://github.com/rileytestut/AltStore
+    - https://thoughtbot.com/blog
 
