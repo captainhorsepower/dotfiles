@@ -40,7 +40,7 @@ function bbd() {
   fi
 
   echo "Dumping Brewfile";
-  brew bundle dump --force --describe;
+  brew bundle dump --force --describe  --no-lock;
 
   if [[ $startingDirectory != $DOTFILES ]]; then
     echo "Returning to $startingDirectory";
