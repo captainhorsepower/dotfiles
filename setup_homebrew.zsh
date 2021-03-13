@@ -26,7 +26,7 @@ chmod -R go-w "$(brew --prefix)/share"
 # which makes them available to Homebrew for the
 # first install (before our `zshrc` is sourced).
 
-# brew bundle --verbose
+HOMEBREW_CASK_OPTS='--no-quarantine' brew bundle --verbose
 
 # echo "Installing VS Code Extensions"
 # cat vscode_extensions | xargs -L 1 code --install-extension

@@ -9,12 +9,10 @@ tap "homebrew/services"
 tap "jeffreywildman/virt-manager"
 # Codec library for encoding and decoding AV1 video streams
 brew "aom"
-# Tool Command Language
-brew "tcl-tk"
-# Automatically formats Python code to conform to the PEP 8 style guide
-brew "autopep8", link: false
 # Clone of cat(1) with syntax highlighting and Git integration
 brew "bat"
+# Tool Command Language
+brew "tcl-tk"
 # Core application library for C
 brew "glib"
 # Statistics utility to count lines of code
@@ -45,12 +43,12 @@ brew "k9s"
 brew "kind"
 # Template-free customization of Kubernetes YAML manifests
 brew "kustomize"
+# Mac App Store command-line interface
+brew "mas"
 # Message broker implementing the MQTT protocol
 brew "mosquitto"
 # Fast, highly customisable system info script
 brew "neofetch"
-# Generate ASCII art with terminal, shell, and OS info
-brew "screenfetch"
 # Easy and Repeatable Kubernetes Development
 brew "skaffold"
 # Display directories as trees (with optional color/HTML output)
@@ -63,18 +61,26 @@ brew "watch"
 brew "wget"
 # Bash scripts that integrate bat with various command-line tools
 brew "eth-p/software/bat-extras"
+cask "a-slower-speed-of-light"
 # AdoptOpenJDK OpenJDK (Java) Development Kit
 cask "adoptopenjdk11"
 # AdoptOpenJDK OpenJDK (Java) Development Kit
 cask "adoptopenjdk15"
+# Application launcher and productivity software
+cask "alfred"
 # Application uninstaller
 cask "appcleaner"
+cask "aware"
 # Time tracking tool for agencies and freelancers
 cask "clockify"
 # Disk space visualizer
 cask "daisydisk"
 # Voice and text chat software
 cask "discord"
+# Git client focusing on productivity
+cask "gitkraken"
+# Terminal built on web technologies
+cask "hyper"
 # JetBrains tools manager
 cask "jetbrains-toolbox"
 # Controls and monitors all fans on Apple computers
@@ -88,7 +94,15 @@ cask "qbittorrent"
 cask "sweet-home3d"
 # Messaging app with a focus on speed and security
 cask "telegram"
+# Calling and messaging application focusing on security
+cask "viber"
 # Open-source code editor
 cask "visual-studio-code"
 # Multimedia player
 cask "vlc"
+mas "Disk Speed Test", id: 425264550
+mas "Microsoft Remote Desktop", id: 1295203466
+mas "Numbers", id: 409203825
+mas "Pages", id: 409201541
+mas "Spark", id: 1176895641
+mas "Speedtest", id: 1153157709
