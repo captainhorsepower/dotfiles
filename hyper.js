@@ -3,7 +3,7 @@
 // See https://hyper.is#cfg for all currently supported options.
 
 // TODO: install fonts.
-// FIXME: blank line in every new window
+// FIXME: blank line in every new window https://github.com/vercel/hyper/issues/4504
 
 module.exports = {
   config: {
