@@ -1,4 +1,4 @@
-#!/usr/bin/evn zsh
+#!/usr/bin/env zsh
 
 # inspiration and source of copy-paste
 # - https://github.com/benitolopez/dotfiles-macos/blob/master/.macos
