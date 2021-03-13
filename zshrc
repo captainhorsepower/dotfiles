@@ -75,10 +75,14 @@ autoload -Uz _zinit
 
 # configure prompt
 # TODO what do ice and compile mean?
+# TODO add space between `branch` and `*` 
 zinit ice compile'(pure|async).zsh' pick'async.zsh' src'pure.zsh'
 zinit light sindresorhus/pure
 
 # TODO accept tab completion based on history
+# bindkey '^I' autosuggest-accept 
+# - this is bad, cuz accepts the whole line and disables prev TAB functionality.
+# - opt + -> does what i want, but not perfect
 zinit ice silent wait:1 atload:_zsh_autosuggest_start
 zinit light zsh-users/zsh-autosuggestions
 
