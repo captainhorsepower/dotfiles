@@ -65,6 +65,7 @@ What I've found:
     - :heavy_check_mark: pure theme. Simple and fast, will use for now.
     - has a lot of stuff (will try later) [p10k](https://github.com/romkatv/powerlevel10k)
     - also can try just [agnoster](https://github.com/agnoster/agnoster-zsh-theme)
+        - https://github.com/zdharma/zinit/issues/75
     - THIS IS SLOW WITH GIT [spaceship prompt](https://github.com/denysdovhan/spaceship-prompt)
     - hmmm https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/fzf
     - autosugestions https://github.com/zsh-users/zsh-autosuggestions

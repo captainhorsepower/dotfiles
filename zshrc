@@ -73,7 +73,6 @@ autoload -Uz _zinit
 (( ${+_comps} )) && _comps[zinit]=_zinit
 ### End of Zinit's installer chunk
 
-# configure prompt
 # TODO what do ice and compile mean?
 # TODO add space between `branch` and `*` 
 zinit ice compile'(pure|async).zsh' pick'async.zsh' src'pure.zsh'
@@ -86,4 +85,5 @@ zinit light sindresorhus/pure
 zinit ice silent wait:1 atload:_zsh_autosuggest_start
 zinit light zsh-users/zsh-autosuggestions
 
+# TODO configure colors
 zinit light zdharma/fast-syntax-highlighting
