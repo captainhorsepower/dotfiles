@@ -11,6 +11,7 @@
     ~/.config/bat:
       create: true
       path: config/bat
+    ~/.hyper.js: # hyper terminal config
 
 - create:
     - ~/Projects
