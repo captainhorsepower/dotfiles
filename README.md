@@ -63,15 +63,16 @@ TODO:
 1. macOs prefs:
     - First, make sure default shell is zsh: `chsh -s /bin/zsh`
     - mission control: don't rearrange workspaces 
-    - finder.view: show path bar 
-    - hide or unmount extra volumes 
     - three finger drag: accessability.pointer control.trackpad options; disable tap-to-click. 
     - touchbar: replace siry with input-source
     - cutom safari keybindings
+    - https://macos-defaults.com/#🙋-what-s-a-defaults-command
     - https://github.com/benitolopez/dotfiles-macos/blob/master/.macos
     - https://www.intego.com/mac-security-blog/unlock-the-macos-docks-hidden-secrets-in-terminal/
-    - https://macos-defaults.com/#🙋-what-s-a-defaults-command
-    - https://about.gitlab.com/blog/2020/04/17/dotfiles-document-and-automate-your-macbook-setup/
+    - https://about.gitlab.com/blog/2020/04/17/
+    - dotfiles-document-and-automate-your-macbook-setup/
+    - todo
+        - defaults read com.crystalidea.macsfancontrol
 
 1. vscode setup
     - filter out extensions
@@ -132,4 +133,14 @@ TODO:
         - snap windows within one desktop
         - handle windows when on connect/disconnect monitor
     - what is `osascript`
+    - alfred setup:
+        - cli for permissions: https://developer.apple.com/documentation/devicemanagement/privacypreferencespolicycontrol#properties
+        - configure shortcuts:
+            - https://apple.stackexchange.com/questions/398561/how-to-set-system-keyboard-shortcuts-via-command-line
+            - http://hints.macworld.com/article.php?story=20131123074223584
+            - https://ryanmo.co/2017/01/05/setting-keyboard-shortcuts-from-terminal-in-macos/
+            - https://www.hammerspoon.org
+            - Karabiner -- allow key remap and other funky keyboard tricks
+    - create tachyon cask, or use tunnelbear instead
+    - i like this for ios development https://github.com/rileytestut/AltStore
 
