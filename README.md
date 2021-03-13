@@ -49,6 +49,34 @@ It creates symlinks, folders, and runs scripts that I want.
     git remote set-url origin git@github.com:eieioxyz/dotfiles_macos.git
     ```
 
+## Setup zsh
+
+What I've found: 
+
+- cool features can be added as plugins
+- plugin managers:
+    - oh-my-zsh is popular but relatively slow
+    - antibody is written in go, is easy faster
+    - zinit (previsouly zplugin) is the fastest, 
+        - adds turbo mode (asyn plugin loading)
+        - seems like the most complicated (steep learning curve)
+- plugins that I want:
+    - [thefuck](https://github.com/nvbn/thefuck) corrects typos in previous command
+    - :heavy_check_mark: pure theme. Simple and fast, will use for now.
+    - has a lot of stuff (will try later) [p10k](https://github.com/romkatv/powerlevel10k)
+    - also can try just [agnoster](https://github.com/agnoster/agnoster-zsh-theme)
+    - THIS IS SLOW WITH GIT [spaceship prompt](https://github.com/denysdovhan/spaceship-prompt)
+    - hmmm https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/fzf
+    - autosugestions https://github.com/zsh-users/zsh-autosuggestions
+
+
+turns out I like hyper. It's a terminal (electron app), uses webGL. And js allows for really fun stuff within terminal!
+
+### Install zinit
+1. (recommended install)
+
+### Install spaceship
+1. (recommended zinit install)
 
 
 TODO:
@@ -71,19 +99,6 @@ TODO:
     - need a beutiful theme with pictures and emojis
     - zsh -g and -s aliases
     - zsh spelling correction
-
-    - What I've found: 
-        - cool features can be added as plugins
-        - plugin managers:
-            - oh-my-zsh is popular but relatively slow
-            - antibody is written in go, is easy faster
-            - zinit (previsouly zplugin) is the fastest, 
-                - adds turbo mode (asyn plugin loading)
-                - seems like the most complicated (steep learning curve)
-        - plugins that I want:
-            - [spaceship prompt](https://github.com/denysdovhan/spaceship-prompt) minimalist prettification thing. 
-            Promises to have everithing I'll want without unncesessary complications, just like a real spaceship.
-            - [thefuck](https://github.com/nvbn/thefuck) corrects typos in previous command
 
 
 1. macOs prefs:
@@ -175,4 +190,6 @@ TODO:
     - create tachyon cask, or use tunnelbear instead
     - i like this for ios development https://github.com/rileytestut/AltStore
     - https://thoughtbot.com/blog
+    - https://jdhao.github.io/2019/10/08/zsh_plugin_managers_compare/
+
 
