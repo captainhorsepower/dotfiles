@@ -78,4 +78,8 @@ autoload -Uz _zinit
 zinit ice compile'(pure|async).zsh' pick'async.zsh' src'pure.zsh'
 zinit light sindresorhus/pure
 
+# TODO accept tab completion based on history
+zinit ice silent wait:1 atload:_zsh_autosuggest_start
+zinit light zsh-users/zsh-autosuggestions
+
 zinit light zdharma/fast-syntax-highlighting

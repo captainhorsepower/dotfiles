@@ -68,6 +68,7 @@ What I've found:
     - THIS IS SLOW WITH GIT [spaceship prompt](https://github.com/denysdovhan/spaceship-prompt)
     - hmmm https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/fzf
     - autosugestions https://github.com/zsh-users/zsh-autosuggestions
+    - fancy diff https://github.com/zdharma/zsh-diff-so-fancy
 
 
 turns out I like hyper. It's a terminal (electron app), uses webGL. And js allows for really fun stuff within terminal!
