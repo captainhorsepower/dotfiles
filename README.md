@@ -2,53 +2,6 @@
 
 This is my first dotfiles repo! Inspired and curated by [dotfiles.eieio.xyz](http://dotfiles.eieio.xyz).
 
-## How it all works
-
-Most of bootstrapping is done by [Dotbot](https://github.com/anishathalye/dotbot).
-It creates symlinks, folders, and runs scripts that I want.
-
-@see [install.conf.yaml](./install.conf.yaml) to see what it's actually doing
-
-## Restore Instructions
-
-1. `xcode-select --install` (Command Line Tools are required for Git and Homebrew)
-2. clone dotfiles repo to `~/.dotfiles`; `cd ~/.dotfiles`
-5. Do one last Software Audit by editing [Brewfile](Brewfile) directly.
-6. [`./install`](install)
-7. Restart computer.
-8. Setup up Dropbox (use multifactor authentication!) and allow files to sync before setting up dependent applications. Alfred settings are stored here. Mackup depends on this as well (and thus so do Terminal and VS Code).
-9. Run `mackup restore`. Consider doing a `mackup restore --dry-run --verbose` first.
-10. [Generate ssh key](https://help.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh), add to GitHub, and switch remotes.
-
-    ```zsh
-    # Generate SSH key in default location (~/.ssh/config)
-    ssh-keygen -t rsa -b 4096 -C "66495007+eieioxyz@users.noreply.github.com"
-
-    # Start the ssh-agent
-    eval "$(ssh-agent -s)"
-
-    # Create config file with necessary settings
-    << EOF > ~/.ssh/config
-    Host *
-      AddKeysToAgent yes
-      UseKeychain yes
-      IdentityFile ~/.ssh/id_rsa
-    EOF
-
-    # Add private key to ssh-agent 
-    ssh-add -K ~/.ssh/id_rsa
-
-    # Copy public key and add to github.com > Settings > SSH and GPG keys
-    pbcopy < ~/.ssh/id_rsa.pub
-
-    # Test SSH connection, then verify fingerprint and username
-    # https://help.github.com/en/github/authenticating-to-github/testing-your-ssh-connection
-    ssh -T git@github.com
-
-    # Switch from HTTPS to SSH
-    git remote set-url origin git@github.com:eieioxyz/dotfiles_macos.git
-    ```
-
 ## Setup zsh
 
 What I've found: 
@@ -57,50 +10,40 @@ What I've found:
 - plugin managers:
     - oh-my-zsh is popular but relatively slow
     - antibody is written in go, is easy faster
-    - zinit (previsouly zplugin) is the fastest, 
+    - :heavy_check_mark: zinit (previsouly zplugin) is the fastest, 
         - adds turbo mode (asyn plugin loading)
         - seems like the most complicated (steep learning curve)
 - plugins that I want:
-    - [thefuck](https://github.com/nvbn/thefuck) corrects typos in previous command
     - :heavy_check_mark: pure theme. Simple and fast, will use for now.
-    - has a lot of stuff (will try later) [p10k](https://github.com/romkatv/powerlevel10k)
-    - also can try just [agnoster](https://github.com/agnoster/agnoster-zsh-theme)
-        - https://github.com/zdharma/zinit/issues/75
-    - THIS IS SLOW WITH GIT [spaceship prompt](https://github.com/denysdovhan/spaceship-prompt)
-    - hmmm https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/fzf
-    - autosugestions https://github.com/zsh-users/zsh-autosuggestions
-    - fancy diff https://github.com/zdharma/zsh-diff-so-fancy
+    - :fire: [thefuck](https://github.com/nvbn/thefuck) corrects typos in previous command
+    - :heavy_check_mark: autosugestions https://github.com/zsh-users/zsh-autosuggestions
 
 
 turns out I like hyper. It's a terminal (electron app), uses webGL. And js allows for really fun stuff within terminal!
 
-### Install zinit
-1. (recommended install)
-
-### Install spaceship
-1. (recommended zinit install)
-
-
 TODO:
-
-1. oh my zsh vs hyper.js https://medium.com/@ssharizal/hyper-js-oh-my-zsh-as-ubuntu-on-windows-wsl-terminal-8bf577cdbd97
-    - git 
-    - theme
-    - k8s
-    - https://jdhao.github.io/2019/10/08/zsh_plugin_managers_compare/
-    - https://project-awesome.org/unixorn/awesome-zsh-plugins#Tutorials
-
 1. mackup
 
-1. iTerm2
-
-1. zsh setup
+1. zsh improvements
+    - hyper breaks in vim (cursor disappears)
     - completions
     - funcitons
-    - zsh plugins
-    - need a beutiful theme with pictures and emojis
+    - k8s
     - zsh -g and -s aliases
     - zsh spelling correction
+    - tmux
+    - https://jdhao.github.io/2019/10/08/zsh_plugin_managers_compare/
+    - https://project-awesome.org/unixorn/awesome-zsh-plugins#Tutorials
+    - has a lot of stuff (will try later) [p10k](https://github.com/romkatv/powerlevel10k)
+    - hmmm https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/fzf
+    - THIS IS SLOW WITH GIT [spaceship prompt](https://github.com/denysdovhan/spaceship-prompt)
+    - fancy diff https://github.com/zdharma/zsh-diff-so-fancy
+    - also can try just [agnoster](https://github.com/agnoster/agnoster-zsh-theme)
+        - https://github.com/zdharma/zinit/issues/75
+
+
+1. iTerm2 and [Kitty](https://sw.kovidgoyal.net/kitty/)
+    - and just for fun https://github.com/Swordfish90/cool-retro-term
 
 
 1. macOs prefs:
@@ -195,3 +138,22 @@ TODO:
     - https://jdhao.github.io/2019/10/08/zsh_plugin_managers_compare/
 
 
+
+## Restore Instructions
+
+1. `xcode-select --install` (Command Line Tools are required for Git and Homebrew)
+2. clone dotfiles repo to `~/.dotfiles`; `cd ~/.dotfiles`
+5. Do one last Software Audit by editing [Brewfile](Brewfile) directly.
+6. [`./install`](install)
+7. Restart computer.
+8. Setup up Dropbox (use multifactor authentication!) and allow files to sync before setting up dependent applications. Alfred settings are stored here. Mackup depends on this as well (and thus so do Terminal and VS Code).
+9. Run `mackup restore`. Consider doing a `mackup restore --dry-run --verbose` first.
+10. [Generate ssh key](https://help.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh), add to GitHub, and switch remotes
+
+
+
+
+Most of bootstrapping is done by [Dotbot](https://github.com/anishathalye/dotbot).
+It creates symlinks, folders, and runs scripts that I want.
+
+@see [install.conf.yaml](./install.conf.yaml) to see what it's actually doing

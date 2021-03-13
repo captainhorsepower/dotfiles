@@ -1,6 +1,9 @@
 - defaults:
     link:
       relink: true
+    shell:
+      stdout: true
+      stderr: true
 
 - clean: ['~']
 
@@ -17,11 +20,12 @@
     - ~/Projects
 
 - shell:
-    # Install homebrew, brews and casks from Brewfile.
-    - command: ./setup_homebrew.zsh
-      stdout: true
-      stderr: true
-    # Configure defaults (preferences)
-    - command: ./setup_macos_defaults.zsh
-      stdout: true
-      stderr: true
+    - 
+      description: Install homebrew, brews and casks from Brewfile.
+      command: ./setup_homebrew.zsh
+    - 
+      description: Install zinit -- zsh plugin manager
+      command: [sh -c "$(curl -fsSL https://raw.githubusercontent.com/zdharma/zinit/master/doc/install.sh)"]
+    - 
+      description: Configure defaults (preferences)
+      command: ./setup_macos_defaults.zsh
