@@ -25,6 +25,9 @@ defaults write com.apple.dock autohide -bool true
 # defaults write com.apple.dock autohide-time-modifier -float 0.25
 # defaults write com.apple.dock autohide-delay -float 0.1
 
+# Hyper: fix press-and-hold-navigation in vim
+defaults write co.zeit.hyper ApplePressAndHoldEnabled -bool false
+
 # Finish macOS Setup
 killall Finder
 killall Dock

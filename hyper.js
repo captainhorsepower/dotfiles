@@ -2,7 +2,6 @@
 // which will not automatically be merged into this file.
 // See https://hyper.is#cfg for all currently supported options.
 
-// TODO: defaults write co.zeit.hyper ApplePressAndHoldEnabled -bool false 
 // TODO: install fonts.
 // FIXME: blank line in every new window
 
