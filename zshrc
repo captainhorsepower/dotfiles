@@ -77,8 +77,8 @@ autoload -Uz _zinit
 # https://stackoverflow.com/a/22627273/9253292
 # TODO: figure out what a hell is happening
 zstyle ':completion:*' completer _complete
+# FIXME: it's broken (ls .zsh -> ls setup_ew.zsh)
 zstyle ':completion:*' matcher-list '' 'm:{[:lower:][:upper:]}={[:upper:][:lower:]}' '+l:|=* r:|=*'
-autoload -Uz compinit; compinit
 
 # TODO what do ice and compile mean?
 # TODO add space between `branch` and `*` 
@@ -99,4 +99,5 @@ zinit light zsh-users/zsh-completions
 
 
 # TODO configure colors
+# TODO: don't highligt in purple accepted path comletion
 zinit light zdharma/fast-syntax-highlighting

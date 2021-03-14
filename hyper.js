@@ -8,7 +8,7 @@
 // TODO: install fonts.
 // FIXME: blank line in every new window https://github.com/vercel/hyper/issues/4504
 // TODO find a way to reinstall all plugins: 
-// like `for i in $(echo ${(F)$(hyper ls)[@]}); do hyper u $i; hyper i $i; done`
+// like `for i in $(echo ${(F)$(hyper ls)[@]}); do hyper u $i && hyper i $i; done`
 
 module.exports = {
   config: {
@@ -78,9 +78,10 @@ module.exports = {
 
     webGLRenderer: true,
 
+    // FIXME: it just stopped working
     hypercwd: {
       initialWorkingDirectory: '~/.dotfiles'
-    },
+    }
   },
 
   // hyper-cat is awesome )))
@@ -94,7 +95,6 @@ module.exports = {
     "gitrocket",
     "space-pull",
     "hyperborder",
-    "hyper-loved",
     "hyper-snazzy"
   ],
 

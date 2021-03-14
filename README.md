@@ -26,6 +26,7 @@ TODO:
 
 1. zsh improvements
     - hyper breaks in vim (cursor disappears)
+    - fuzzy finder https://stackoverflow.com/a/21619292/9253292
     - completions
     - funcitons
     - k8s
