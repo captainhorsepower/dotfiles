@@ -3,6 +3,8 @@ export DOTFILES="$HOME/.dotfiles"
 
 # My awesome aliases
 
+# FIXME: add idea and uao aliases
+
 # Colorful ls
 alias ls='command exa -lF --git'
 alias lst='ls --sort age'
@@ -78,6 +80,7 @@ autoload -Uz _zinit
 # TODO: figure out what a hell is happening
 zstyle ':completion:*' completer _complete
 # FIXME: it's broken (ls .zsh -> ls setup_ew.zsh)
+# more on zstyle https://unix.stackexchange.com/a/214699
 zstyle ':completion:*' matcher-list '' 'm:{[:lower:][:upper:]}={[:upper:][:lower:]}' '+l:|=* r:|=*'
 
 # TODO what do ice and compile mean?
@@ -90,6 +93,7 @@ zinit light sindresorhus/pure
 # bindkey '^I' autosuggest-accept 
 # - this is bad, cuz accepts the whole line and disables prev TAB functionality.
 # - opt + -> does what i want, but not perfect
+# looks helpful https://gist.github.com/flixr/1468156#file-zshrc-L73
 zinit ice silent wait:1 atload:_zsh_autosuggest_start
 zinit light zsh-users/zsh-autosuggestions
 

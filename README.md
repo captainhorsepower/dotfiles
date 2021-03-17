@@ -49,6 +49,9 @@ TODO:
 
 1. macOs prefs:
     - First, make sure default shell is zsh: `chsh -s /bin/zsh`
+    - alfred:
+        - remap cmd+space to alfred from spotlight
+        - hide alfred icon in menubar
     - mission control: don't rearrange workspaces 
     - three finger drag: accessability.pointer control.trackpad options; disable tap-to-click. 
     - touchbar: replace siry with input-source
