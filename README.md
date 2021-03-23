@@ -112,6 +112,10 @@ TODO:
 
 1. Look through brew file
 
+1. and some DDD
+    - https://www.infoq.com/articles/ddd-in-practice/
+    - https://techblog.bozho.net/on-domain-driven-design-anemic-domain-models-code-generation-dependency-injection-and-more/
+
 1. backup intellij IDEA (and isntall!)
 1. install docker; what is whalebrew
 
