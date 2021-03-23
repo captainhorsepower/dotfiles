@@ -6,10 +6,10 @@ export DOTFILES="$HOME/.dotfiles"
 # FIXME: add idea and uao aliases
 
 # Colorful ls
-alias ls='command exa -lF --git'
+alias ls='command exa -lF'
 alias lst='ls --sort age'
 
-alias exa='exa -laF --git --git-ignore'
+alias exa='exa -laF'
 alias exat='exa --sort age'
 
 # Colorful manpage
@@ -96,11 +96,6 @@ zinit light sindresorhus/pure
 # looks helpful https://gist.github.com/flixr/1468156#file-zshrc-L73
 zinit ice silent wait:1 atload:_zsh_autosuggest_start
 zinit light zsh-users/zsh-autosuggestions
-
-# may be load in turbo? 
-# FIXME wtf how to uninstall it?
-zinit light zsh-users/zsh-completions
-
 
 # TODO configure colors
 # TODO: don't highligt in purple accepted path comletion
