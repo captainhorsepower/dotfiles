@@ -70,6 +70,8 @@ if [[ ! -f $HOME/.zinit/bin/zinit.zsh ]]; then
         print -P "%F{160}▓▒░ The clone has failed.%f%b"
 fi
 
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
 source "$HOME/.zinit/bin/zinit.zsh"
 autoload -Uz _zinit
 (( ${+_comps} )) && _comps[zinit]=_zinit
@@ -77,11 +79,10 @@ autoload -Uz _zinit
 
 # Finally! enable so good fucking completions 
 # https://stackoverflow.com/a/22627273/9253292
-# TODO: figure out what a hell is happening
-zstyle ':completion:*' completer _complete
-# FIXME: it's broken (ls .zsh -> ls setup_ew.zsh)
 # more on zstyle https://unix.stackexchange.com/a/214699
-zstyle ':completion:*' matcher-list '' 'm:{[:lower:][:upper:]}={[:upper:][:lower:]}' '+l:|=* r:|=*'
+# FIXME: it's broken (ls .zsh -> ls setup_ew.zsh)
+# https://stackoverflow.com/questions/24226685/have-zsh-return-case-insensitive-auto-complete-matches-but-prefer-exact-matches
+zstyle ':completion:*' matcher-list '' 'm:{a-zA-Z}={A-Za-z}' 'r:|[._-]=* r:|=*' 'l:|=* r:|=*'
 
 # TODO what do ice and compile mean?
 # TODO add space between `branch` and `*` 

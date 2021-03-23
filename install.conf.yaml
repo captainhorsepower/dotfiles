@@ -15,6 +15,7 @@
       create: true
       path: config/bat
     ~/.hyper.js: # hyper terminal config
+    ~/.fzf.zsh:
 
 - create:
     - ~/Projects
