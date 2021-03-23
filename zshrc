@@ -61,6 +61,11 @@ if type brew &>/dev/null; then
   compinit
 fi
 
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+# TODO eveluate ways to install with zinit and load in turbo mode
+eval $(thefuck --alias)
+
 ### Added by Zinit's installer
 if [[ ! -f $HOME/.zinit/bin/zinit.zsh ]]; then
     print -P "%F{33}▓▒░ %F{220}Installing %F{33}DHARMA%F{220} Initiative Plugin Manager (%F{33}zdharma/zinit%F{220})…%f"
@@ -69,8 +74,6 @@ if [[ ! -f $HOME/.zinit/bin/zinit.zsh ]]; then
         print -P "%F{33}▓▒░ %F{34}Installation successful.%f%b" || \
         print -P "%F{160}▓▒░ The clone has failed.%f%b"
 fi
-
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 source "$HOME/.zinit/bin/zinit.zsh"
 autoload -Uz _zinit
