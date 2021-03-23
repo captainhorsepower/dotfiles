@@ -23,6 +23,39 @@ turns out I like hyper. It's a terminal (electron app), uses webGL. And js allow
 
 TODO:
 1. mackup
+1. setup vim and python
+1. fun nerdy dude:
+    - https://medium.com/@rwxrob/tmux-fail-use-vscode-d1ce05c7beb1
+    - https://rwx.gg/tools/editors/vi/how/magic/
+    - build opencv python myself https://stackoverflow.com/questions/37070304/how-to-build-opencv-for-python3-when-both-python2-and-python3-are-installed/39409570
+
+
+
+1. diploma links tmp storage
+    - https://blog.rabimba.com/2018/10/arcore-and-arkit-what-is-under-hood.html
+    - https://developers.google.com/ar/discover/concepts
+    - might find more examples nearby https://github.com/opencv/opencv/blob/3.2.0/samples/python/stereo_match.py
+    - https://www.mdpi.com/2073-8994/11/4/570/htm
+    - wow https://shkspr.mobi/blog/2018/04/reconstructing-3d-models-from-the-last-jedi/
+    - http://lunokhod.org/?p=1446
+    - (bad) setup opencv env https://learnopencv.com/install-opencv3-on-macos/
+    - contrib modules https://docs.opencv.org/master/
+    - core modules https://docs.opencv.org/master/d9/df8/tutorial_root.html
+    - opencv and xcode https://medium.com/@jaskaranvirdi/setting-up-opencv-and-c-development-environment-in-xcode-b6027728003
+    - someones disseratation https://core.ac.uk/download/pdf/210601816.pdf
+    - from 90s but cool
+        - DP correspondance search https://people.inf.ethz.ch/pomarc/pubs/VanMeerbergenIJCV.pdf
+    - rectify uncallibrated https://docs.opencv.org/2.4/modules/calib3d/doc/camera_calibration_and_3d_reconstruction.html#stereorectifyuncalibrated
+    - features are now free, supposedly
+    - pathcmatch stereo http://www.bmva.org/bmvc/2011/proceedings/paper14/paper14.pdf
+    - hash match https://openaccess.thecvf.com/content_ICCV_2017/papers/Fanello_Low_Compute_and_ICCV_2017_paper.pdf
+    - triangulation https://perception.inrialpes.fr/Publications/1997/HS97/HartleySturm-cviu97.pdf
+    - fast bilateral solver
+    - original patch match https://gfx.cs.princeton.edu/pubs/Barnes_2009_PAR/patchmatch.pdf
+    - suspicious dude with SOS https://github.com/meteorshowers/SOS
+    - dataset https://github.com/ziizouz/middlebury-stereo-dataset
+    - looks fun https://www.researchgate.net/publication/306544236_Holoportation_Virtual_3D_Teleportation_in_Real-time
+    - tbb and openmp to parallelize and speed-up code
 
 1. zsh improvements
     - hyper breaks in vim (cursor disappears)
