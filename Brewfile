@@ -1,5 +1,4 @@
 tap "adoptopenjdk/openjdk"
-tap "beeftornado/rmtree"
 tap "eth-p/software"
 tap "homebrew/bundle"
 tap "homebrew/cask"

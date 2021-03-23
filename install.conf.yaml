@@ -4,6 +4,7 @@
     shell:
       stdout: true
       stderr: true
+      stdin: true # brew wanted standart input for installation 
 
 - clean: ['~']
 
