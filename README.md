@@ -22,9 +22,12 @@ What I've found:
 turns out I like hyper. It's a terminal (electron app), uses webGL. And js allows for really fun stuff within terminal!
 
 TODO:
+1. use dotbot profiles and separate osx startup-config from other stuff...
+    - [ ] split dotfiles dir (osx, shell, java, python, etc)
+    - [ ] add sample profiles
+    - [ ] make it burn
 1. install docker (and automate it).; `brew install --cask docker`
 1. safari: don't close with pinned tab
-1. use dotbot profiles and separate osx startup-config from other stuff...
 1. add scripts to eject (other) macos volumes on startup
     - better: don't mount them when disk plugged in.
     - https://stackoverflow.com/questions/25996484/xcode-wont-start-stuck-on-verifying-xcode
@@ -34,8 +37,16 @@ TODO:
     - (research) add launch agent for backup when disk is connected (like time machine)
     - alfred settings (requires powerpack to change folder, but can try to sync app support folder...) 
     - https://eshop.macsales.com/blog/45185-mac-101-learn-the-power-of-rsync-for-backup-remote-archive-systems/
+    - ssh keys; handle ssh-agent and other funky stuff
+1. what is proper way to backup ssh? 
+    - fun enough, just copied my old .ssh folder and all my keys got restored
+    - maybe ssh agent makes sense only with password protected ssh keys
+    - it might be a good idea, to password protext ssh keys.
+
 
 1. still manual :(
+    - terminal:
+        - select homebrwe theme and customize font.
     - basic vscode settings:
         - close editors instead of windows
         - font size
@@ -118,6 +129,8 @@ TODO:
     - https://rwx.gg/tools/editors/vi/how/magic/
     - build opencv python myself https://stackoverflow.com/questions/37070304/how-to-build-opencv-for-python3-when-both-python2-and-python3-are-installed/39409570
 
+
+1. learn `git add -p`
 
 
 1. diploma links tmp storage
