@@ -107,6 +107,10 @@ TODO:
         - where my resources prefs are stored and how to backup them?
         - what is new experimental hypervisor?
     - run aware at startup (add login item?).
+    - jetbrains:
+        - input license (easy engouh via browser)
+        - donwload IDEA
+        - restore settings
 
 1. setup vim and python
 1. fun nerdy dude:
