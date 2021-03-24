@@ -23,14 +23,17 @@ turns out I like hyper. It's a terminal (electron app), uses webGL. And js allow
 
 TODO:
 1. install docker (and automate it).; `brew install --cask docker`
+1. safari: don't close with pinned tab
 1. use dotbot profiles and separate osx startup-config from other stuff...
 1. add scripts to eject (other) macos volumes on startup
     - better: don't mount them when disk plugged in.
+    - https://stackoverflow.com/questions/25996484/xcode-wont-start-stuck-on-verifying-xcode
 1. create backup (with rsync backup)
     - Documents
     - how to restore backup? 
     - (research) add launch agent for backup when disk is connected (like time machine)
     - alfred settings (requires powerpack to change folder, but can try to sync app support folder...) 
+    - https://eshop.macsales.com/blog/45185-mac-101-learn-the-power-of-rsync-for-backup-remote-archive-systems/
 
 1. still manual :(
     - basic vscode settings:
