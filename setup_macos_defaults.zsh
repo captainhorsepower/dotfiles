@@ -27,10 +27,12 @@ defaults write com.apple.finder ShowPathbar -bool true
 # Dock
 
 # System Preferences > Dock
+
 defaults write com.apple.dock magnification -bool true
 defaults write com.apple.dock tilesize -int 44
 defaults write com.apple.dock largesize -int 73
 defaults write com.apple.dock autohide -bool true
+
 # defaults write com.apple.dock autohide-time-modifier -float 0.25
 # defaults write com.apple.dock autohide-delay -float 0.1
 

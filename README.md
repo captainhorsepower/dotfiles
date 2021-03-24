@@ -22,21 +22,21 @@ What I've found:
 turns out I like hyper. It's a terminal (electron app), uses webGL. And js allows for really fun stuff within terminal!
 
 TODO:
+1. install docker (and automate it).; `brew install --cask docker`
+1. use dotbot profiles and separate osx startup-config from other stuff...
 1. add scripts to eject (other) macos volumes on startup
     - better: don't mount them when disk plugged in.
-1. install docker (and automate it).; `brew install --cask docker`
 1. create backup (with rsync backup)
     - Documents
     - how to restore backup? 
     - (research) add launch agent for backup when disk is connected (like time machine)
     - alfred settings (requires powerpack to change folder, but can try to sync app support folder...) 
-1. use dotbot profiles and separate osx startup-config from other stuff...
-1. ~~mackup~~ is just symlinking tool
-1. alfred
-    - minimal config for alfred
-    -  ~~disable spotlight indexing~~ sptlight is required by alfred :( https://www.alfredapp.com/help/troubleshooting/indexing/spotlight/
 
 1. still manual :(
+    - basic vscode settings:
+        - close editors instead of windows
+        - font size
+        - autosave
     - alfred:
         - appearence -> help -> hide icon from menu bar
     - safari -> view -> show status bar (cmd + /)
@@ -176,8 +176,8 @@ TODO:
     - older:
         - https://macos-defaults.com/#🙋-what-s-a-defaults-command
         - https://github.com/benitolopez/dotfiles-macos/blob/master/.macos
-        - https://www.intego.com/mac-security-blog/ unlock-the-macos-docks-hidden-secrets-in-terminal/
-        - https://about.gitlab.com/blog/2020/04/17/ dotfiles-document-and-automate-your-macbook-setup/
+        - https://www.intego.com/mac-security-blog/unlock-the-macos-docks-hidden-secrets-in-terminal/
+        - https://about.gitlab.com/blog/2020/04/17/dotfiles-document-and-automate-your-macbook-setup/
         - https://macos-defaults.com/dock/mineffect.html#set-to-suck
         - todo
         - defaults read com.crystalidea.macsfancontrol

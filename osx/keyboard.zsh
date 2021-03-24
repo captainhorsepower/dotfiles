@@ -13,3 +13,9 @@ plutil -replace AppleSymbolicHotKeys.65.enabled -bool NO $hotkeys_plist
 # - 61 (slect previous) ctrl + alt + space
 
 # safari
+
+
+# quick fix to remove everything from dock
+defaults write com.apple.dock static-only -bool yes
+# highlight hidden apps (transparency).
+defaults write com.apple.Dock showhidden -bool yes
