@@ -26,6 +26,7 @@ TODO:
     - [ ] split dotfiles dir (osx, shell, java, python, etc)
     - [ ] add sample profiles
     - [ ] make it burn
+1. configure folders in finder sidebar; configure default view to list
 1. install docker (and automate it).; `brew install --cask docker`
 1. safari: don't close with pinned tab
 1. add scripts to eject (other) macos volumes on startup
@@ -42,6 +43,16 @@ TODO:
     - fun enough, just copied my old .ssh folder and all my keys got restored
     - maybe ssh agent makes sense only with password protected ssh keys
     - it might be a good idea, to password protext ssh keys.
+1. dont start dication. or start (maybe it's good)
+1. macs fan control. (mayby wont start, actually, cuz not so useful)
+1. install sourctree and skip initial setp
+    - ~/.gitflow_export file was added, hmm
+    - not easily quitable 
+1. window manager
+    - remember window position and stuff
+    - autoconfigure known external monitors (arrangement and orientation)
+1. usb keyboard
+    - remap cmd and option keys.
 
 
 1. still manual :(
@@ -122,6 +133,11 @@ TODO:
         - input license (easy engouh via browser)
         - donwload IDEA
         - restore settings
+    - desktop and screensaver 
+        - set better wallpapers (from default or event not default, lol)
+        - select random screensaver
+    - install tachyon (or any other vpn)
+    - install пдд беларуси.
 
 1. setup vim and python
 1. fun nerdy dude:
