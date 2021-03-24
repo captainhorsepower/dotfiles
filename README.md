@@ -22,7 +22,89 @@ What I've found:
 turns out I like hyper. It's a terminal (electron app), uses webGL. And js allows for really fun stuff within terminal!
 
 TODO:
-1. mackup
+1. add scripts to eject (other) macos volumes on startup
+    - better: don't mount them when disk plugged in.
+1. install docker (and automate it).; `brew install --cask docker`
+1. create backup (with rsync backup)
+    - Documents
+    - how to restore backup? 
+    - (research) add launch agent for backup when disk is connected (like time machine)
+    - alfred settings (requires powerpack to change folder, but can try to sync app support folder...) 
+1. use dotbot profiles and separate osx startup-config from other stuff...
+1. ~~mackup~~ is just symlinking tool
+1. alfred
+    - minimal config for alfred
+    -  ~~disable spotlight indexing~~ sptlight is required by alfred :( https://www.alfredapp.com/help/troubleshooting/indexing/spotlight/
+
+1. still manual :(
+    - alfred:
+        - appearence -> help -> hide icon from menu bar
+    - safari -> view -> show status bar (cmd + /)
+    - displays -> scaling -> larger text
+    - icons in menu bar:
+        - `com.apple.Spotlight "NSStatusItem Preferred Position Item-0" = "436.1644";` remove it to hide??? 
+        - `"com.apple.TextInputMenuAgent" =     { "NSStatusItem Preferred Position Item-0" = "47.01755"; "NSStatusItem Visible Item-0" = 1;};` ???
+        - ```
+            "com.apple.controlcenter" =     {
+            "NSStatusItem Preferred Position Battery" = 256;
+            "NSStatusItem Preferred Position BentoBox" = 183;
+            "NSStatusItem Preferred Position Clock" = "83.5";
+            "NSStatusItem Preferred Position WiFi" = 217;
+            "NSStatusItem Visible Battery" = 1;
+            "NSStatusItem Visible BentoBox" = 1;
+            "NSStatusItem Visible Clock" = 1;
+            "NSStatusItem Visible DoNotDisturb" = 0;
+            "NSStatusItem Visible Item-0" = 0;
+            "NSStatusItem Visible Item-1" = 0;
+            "NSStatusItem Visible Item-2" = 0;
+            "NSStatusItem Visible Item-3" = 0;
+            "NSStatusItem Visible Item-4" = 0;
+            "NSStatusItem Visible WiFi" = 1;
+        };
+        ```
+    - keyboard -> customize controlstrib (old - touchbar)
+        - ```
+        "com.apple.controlstrip" =     {
+        MiniCustomized =         (
+            "com.apple.system.brightness",
+            "com.apple.system.volume",
+            "com.apple.system.mute",
+            "com.apple.system.media-play-pause"
+        );
+        "last-analytics-stamp" =         (
+            "638214755.029963"
+        );
+        ```
+    };
+    - keyboard -> input sources -> add Russian PC; suspicion: 
+        - ```
+          NSLinguisticDataAssetsRequested =         (
+            en,
+            ru
+          );
+          ```
+        - ```
+            com.apple.HIToolbox AppleEnabledInputSources --add
+            {
+                InputSourceKind = "Keyboard Layout";
+                "KeyboardLayout ID" = 19458;
+                "KeyboardLayout Name" = RussianWin;
+            }
+           ``` 
+        - ```
+          "com.apple.TextInputMenu" =     {
+            visible = 1;
+          };
+          "com.apple.TextInputMenuAgent" =     {
+              "NSStatusItem Visible Item-0" = 1;
+          };
+          ```
+    - docker 
+        - sign in 
+        - where my resources prefs are stored and how to backup them?
+        - what is new experimental hypervisor?
+    - run aware at startup (add login item?).
+
 1. setup vim and python
 1. fun nerdy dude:
     - https://medium.com/@rwxrob/tmux-fail-use-vscode-d1ce05c7beb1
@@ -83,7 +165,6 @@ TODO:
 1. macOs prefs:
     - First, make sure default shell is zsh: `chsh -s /bin/zsh`
     - alfred:
-        - remap cmd+space to alfred from spotlight
         - hide alfred icon in menubar
     - mission control: don't rearrange workspaces 
     - three finger drag: accessability.pointer control.trackpad options; disable tap-to-click. 

@@ -14,6 +14,15 @@ defaults write com.apple.finder ShowStatusBar -bool false
 # Finder > View > Show Path Bar
 defaults write com.apple.finder ShowPathbar -bool true
 
+# https://github.com/diimdeep/dotfiles/blob/master/osx/configure/hotkeys.sh
+# TODO: build up list of my keybindings :^) they actually require restart, lol.
+# plutil -extract AppleSymbolicHotKeys.64 xml1 -o test.xml /Users/cap_vrby/Library/Preferences/com.apple.symbolichotkeys.plist
+# and discover all other wanted settings:
+# defaults read > before
+# defaults read > after; code --diff before after
+
+# plutil -extract AppleSymbolicHotKeys.64 json -o test.xml -r /Users/cap_vrby/Library/Preferences/com.apple.symbolichotkeys.plist
+
 
 # Dock
 
