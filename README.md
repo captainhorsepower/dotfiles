@@ -53,6 +53,19 @@ TODO:
     - autoconfigure known external monitors (arrangement and orientation)
 1. usb keyboard
     - remap cmd and option keys.
+    - keyboard -> text -> disable spelling auto-correcit
+1. terminal -> advanced -> bell
+    - font 16
+1. handle java versioning (good start at https://stackoverflow.com/questions/21964709/how-to-set-or-change-the-default-java-jdk-version-on-os-x)
+1. dock & menu bar -> clock 
+    - 24 hour
+    - show day of the week (not show data)
+1. don't dim screen while on battery power.
+1. install epson drivers and add printer...
+1. show downloads in dock
+1. configure telegram notifications to automatically hide.
+1. vscode extensions 
+1. remember input source per window
 
 
 1. still manual :(
