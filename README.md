@@ -69,8 +69,9 @@ TODO:
 
 
 1. still manual :(
+    - add Projects and home directories to finder sidebar
     - terminal:
-        - select homebrwe theme and customize font.
+        - select homebrew theme and customize font.
     - basic vscode settings:
         - close editors instead of windows
         - font size
@@ -100,7 +101,7 @@ TODO:
             "NSStatusItem Visible WiFi" = 1;
         };
         ```
-    - keyboard -> customize controlstrib (old - touchbar)
+    - keyboard -> customize controlstrip (old - touchbar)
         - ```
         "com.apple.controlstrip" =     {
         MiniCustomized =         (
@@ -137,6 +138,12 @@ TODO:
               "NSStatusItem Visible Item-0" = 1;
           };
           ```
+    - automatically switch to documents input source 
+        ````
+        defaults read com.apple.HIToolbox AppleGlobalTextInputProperties
+        {
+            TextInputGlobalPropertyPerContextInput = 1;
+        }
     - docker 
         - sign in 
         - where my resources prefs are stored and how to backup them?
@@ -158,6 +165,7 @@ TODO:
     - https://rwx.gg/tools/editors/vi/how/magic/
     - build opencv python myself https://stackoverflow.com/questions/37070304/how-to-build-opencv-for-python3-when-both-python2-and-python3-are-installed/39409570
 
+1. even better dude: https://github.com/safijari (jack of some on youtube)
 
 1. learn `git add -p`
 

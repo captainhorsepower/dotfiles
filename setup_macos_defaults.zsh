@@ -13,6 +13,9 @@ defaults write com.apple.finder ShowStatusBar -bool false
 
 # Finder > View > Show Path Bar
 defaults write com.apple.finder ShowPathbar -bool true
+# Finder > Settings > advanced show warnings
+defaults write com.apple.finder FXEnableExtensionChangeWarning -bool false
+defaults write com.apple.finder FXEnableRemoveFromICloudDriveWarning -bool false
 
 # https://github.com/diimdeep/dotfiles/blob/master/osx/configure/hotkeys.sh
 # TODO: build up list of my keybindings :^) they actually require restart, lol.
