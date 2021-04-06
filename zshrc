@@ -1,5 +1,6 @@
 # Set Variables
 export DOTFILES="$HOME/.dotfiles"
+export JAVA_HOME=`/usr/libexec/java_home -v 15`
 
 # My awesome aliases
 
