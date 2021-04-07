@@ -16,6 +16,12 @@ defaults write com.apple.finder ShowPathbar -bool true
 # Finder > Settings > advanced show warnings
 defaults write com.apple.finder FXEnableExtensionChangeWarning -bool false
 defaults write com.apple.finder FXEnableRemoveFromICloudDriveWarning -bool false
+# TODO: set default view to list; add Projects and home folders to sidebar.
+
+# TODO: Keyboard -> Input Sources -> automaticlly change to document language
+# keyboard -> text -> disable spelling auto-correction
+
+# TODO: displays (scaling)
 
 # https://github.com/diimdeep/dotfiles/blob/master/osx/configure/hotkeys.sh
 # TODO: build up list of my keybindings :^) they actually require restart, lol.
