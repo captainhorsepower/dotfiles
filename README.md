@@ -34,6 +34,10 @@ handle java versioning (good start at https://stackoverflow.com/questions/219647
 
 Installing deps without brew
 
+### zsh itself
+
+`./setupzsh.sh`
+
 ### fzf https://github.com/junegunn/fzf#installation
 
 ```zsh
