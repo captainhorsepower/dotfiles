@@ -1,3 +1,5 @@
+# This is bring-with-me config. Must be safely run on any machine on any system.
+
 - defaults:
     link:
       relink: true

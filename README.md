@@ -16,6 +16,12 @@ For simplicity, I'll use 'simple profiles' [via modifying install scripts](https
 
 So all my configs are still in the same repo, but are not installed all at once.
 
+----
+
+Want to start working already. So will just make `bring-with-me` the default branch.
+
+This contains minmal setup, that can be safely ported with me, as I'm sshing into servers.
+
 ## What's immediately wrong
 
 Need to add workarounds for brew, java, bat, exa in zshrc.
