@@ -64,8 +64,6 @@ fi
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
-# TODO eveluate ways to install with zinit and load in turbo mode
-eval $(thefuck --alias)
 
 ### Added by Zinit's installer
 if [[ ! -f $HOME/.zinit/bin/zinit.zsh ]]; then
@@ -97,8 +95,15 @@ zinit light sindresorhus/pure
 
 # adds diff-so-fancy to the PATH and configures git-dsf command
 # https://github.com/zdharma/zsh-diff-so-fancy
-zplugin ice as"program" pick"bin/git-dsf"
-zplugin light zdharma/zsh-diff-so-fancy
+zinit ice as"program" pick"bin/git-dsf"
+zinit light zdharma/zsh-diff-so-fancy
+
+
+# Thefuck as plugin! https://github.com/laggardkernel/zsh-thefuck 
+# this one does the job instead of eval $(thefuck --alias)
+zinit ice wait'1' lucid
+zinit light laggardkernel/zsh-thefuck
+
 
 # TODO accept tab completion based on history
 # bindkey '^I' autosuggest-accept 
