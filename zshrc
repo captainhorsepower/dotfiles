@@ -94,6 +94,12 @@ zstyle ':completion:*' matcher-list '' 'm:{a-zA-Z}={A-Za-z}' 'r:|[._-]=* r:|=*' 
 zinit ice compile'(pure|async).zsh' pick'async.zsh' src'pure.zsh'
 zinit light sindresorhus/pure
 
+
+# adds diff-so-fancy to the PATH and configures git-dsf command
+# https://github.com/zdharma/zsh-diff-so-fancy
+zplugin ice as"program" pick"bin/git-dsf"
+zplugin light zdharma/zsh-diff-so-fancy
+
 # TODO accept tab completion based on history
 # bindkey '^I' autosuggest-accept 
 # - this is bad, cuz accepts the whole line and disables prev TAB functionality.
