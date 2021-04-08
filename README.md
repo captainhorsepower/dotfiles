@@ -1,6 +1,22 @@
 # Dotfiles
 
-This is my first dotfiles repo! Inspired and curated by [dotfiles.eieio.xyz](http://dotfiles.eieio.xyz).
+
+This time inspired by Dotbot creator.
+
+The idea is to keep 'base' `dotfiles` config (portable across all systems) 
+in the main dotfiles repo. This repo can (and should be public). 
+And it's the one to bring to ssh servers with you.
+
+For OS / machine local config, use separate repo (eg `dotfiles_local`)
+and create a separate branch for all machines. 
+This repo can be private, and thus even contain stuff like ssh keys.
+
+## Currently embraced structure
+
+For simplicity, I'll use 'simple profiles' [via modifying install scripts](https://github.com/anishathalye/dotbot/wiki/Tips-and-Tricks#simple-setup).
+
+So all my configs are still in the same repo, but are not installed all at once.
+
 
 ## Setup zsh
 
@@ -319,21 +335,4 @@ TODO:
 
 - some vscode bitbucket plugins are pretty fun! (loke official one for issues or bitbucket pipelines status)
 
-## Restore Instructions
-
-1. `xcode-select --install` (Command Line Tools are required for Git and Homebrew)
-2. clone dotfiles repo to `~/.dotfiles`; `cd ~/.dotfiles`
-5. Do one last Software Audit by editing [Brewfile](Brewfile) directly.
-6. [`./install`](install)
-7. Restart computer.
-8. Setup up Dropbox (use multifactor authentication!) and allow files to sync before setting up dependent applications. Alfred settings are stored here. Mackup depends on this as well (and thus so do Terminal and VS Code).
-9. Run `mackup restore`. Consider doing a `mackup restore --dry-run --verbose` first.
-10. [Generate ssh key](https://help.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh), add to GitHub, and switch remotes
-
-
-
-
-Most of bootstrapping is done by [Dotbot](https://github.com/anishathalye/dotbot).
-It creates symlinks, folders, and runs scripts that I want.
-
-@see [install.conf.yaml](./install.conf.yaml) to see what it's actually doing
+This is my first dotfiles repo! Inspired and curated by [dotfiles.eieio.xyz](http://dotfiles.eieio.xyz).

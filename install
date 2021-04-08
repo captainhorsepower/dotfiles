@@ -1,9 +1,6 @@
 #!/usr/bin/env bash
 
 
-# From Dotbot's wiki, there is and easy way to create multiple profiles
-# https://github.com/anishathalye/dotbot/wiki/Tips-and-Tricks#simple-setup 
-
 DEFAULT_CONFIG_PREFIX="default"
 CONFIG_SUFFIX=".conf.yaml"
 DOTBOT_DIR="dotbot"
