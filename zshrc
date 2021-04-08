@@ -1,5 +1,6 @@
 # Set Variables
 export DOTFILES="$HOME/.dotfiles"
+# FIXME this is setup/mac specific stuff; can't bring that to server!
 export JAVA_HOME=`/usr/libexec/java_home -v 15`
 
 # My awesome aliases
@@ -100,7 +101,7 @@ zinit light zdharma/zsh-diff-so-fancy
 
 
 # Thefuck as plugin! https://github.com/laggardkernel/zsh-thefuck 
-# this one does the job instead of eval $(thefuck --alias)
+# this one works does the job instead of eval $(thefuck --alias)
 zinit ice wait'1' lucid
 zinit light laggardkernel/zsh-thefuck
 
