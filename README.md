@@ -24,6 +24,31 @@ To fix that, at least need 'local customizations'
 
 handle java versioning (good start at https://stackoverflow.com/questions/21964709/how-to-set-or-change-the-default-java-jdk-version-on-os-x)
 
+----
+
+Installing deps without brew
+
+### fzf https://github.com/junegunn/fzf#installation
+
+```zsh
+git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
+~/.fzf/install
+```
+
+update: `cd ~/.fzf && git pull && ./install`
+
+### thefuck https://github.com/nvbn/thefuck
+
+install this 
+``` 
+sudo apt update
+sudo apt install python3-dev python3-pip python3-setuptools
+sudo pip3 install thefuck
+```
+
+zinit + plugin should to the rest?
+
+
 ## TODO:
 
 1. Better dotfiles config
