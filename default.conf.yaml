@@ -10,7 +10,6 @@
 - clean: ['~']
 
 - link:
-    ~/.gitconfig:
     ~/.zshenv: 
     ~/.zshrc: 
     ~/.fzf.zsh:
