@@ -15,7 +15,7 @@
     ~/.fzf.zsh:
     ~/.config/bat:
       create: true
-        path: config/bat
+      path: config/bat
 
 - shell:
     - 
